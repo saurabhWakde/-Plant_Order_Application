@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Debit Card Form</title>
+  <style>
+    /* CSS Styles */
+    .form-container {
+      width: 400px;
+      margin: 0 auto;
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    input[type="text"] {
+      width: 100%;
+      padding: 10px;
+      font-size: 16px;
+    }
+    .error-message {
+      color: red;
+    }
+  </style>
+  <script>
+    // JavaScript code for form validation
+
+        function formatCardNumber(event) {
+            const input = event.target;
+  const inputValue = input.value.replace(/\D/g, '');
+  const formattedValue = inputValue.slice(0, 16).replace(/(.{4})/g, '$1 ');
+  input.value = formattedValue;
+    }
+
+
+    function validateForm() {
+      var cardNumber = document.getElementById("card-number").value.replace(/\s/g, '');
+      var expirationMonth = document.getElementById("expiration-month").value;
+      var expirationYear = document.getElementById("expiration-year").value;
+      var cvv = document.getElementById("cvv").value;
+      var cardholderName = document.getElementById("cardholder-name").value;
+      
+      var errorMessages = [];
+      
+      // Validate card number
+            
+        if (cardNumber.length !== 16 || !/^\d+$/.test(cardNumber)) {
+            errorMessages.push("Invalid card number");
+            alert('Please enter a 16-digit number');
+        }
+            
+      // Validate expiration
+      if (expirationMonth.length !== 2 || expirationYear.length !== 2 || !/^\d+$/.test(expirationMonth) || !/^\d+$/.test(expirationYear)) {
+        errorMessages.push("Invalid expiration date");
+      }
+      
+      // Validate CVV
+      if (cvv.length !== 3 || !/^\d+$/.test(cvv)) {
+        errorMessages.push("Invalid CVV");
+      }
+      
+      // Validate cardholder name
+      if (cardholderName.length === 0) {
+        errorMessages.push("Cardholder name is required");
+      }
+      
+      // Display error messages
+      var errorContainer = document.getElementById("error-container");
+      errorContainer.innerHTML = "";
+      
+      if (errorMessages.length > 0) {
+        for (var i = 0; i < errorMessages.length; i++) {
+          var errorMessage = document.createElement("p");
+          errorMessage.className = "error-message";
+          errorMessage.textContent = errorMessages[i];
+          errorContainer.appendChild(errorMessage);
+        }
+        return false;
+      }
+
+
+      var person = prompt("Please enter your OTP", "");
+
+      if (person === "1234") {
+        alert("We are processing your payment of ₹2000");
+        window.location.href = "paymentsuccessful.html";
+      } else {
+        alert("Wrong OTP, Try Again");
+      }
+      
+      //return true;
+    }
+  </script>
+</head>
+<body>
+  <div class="form-container">
+    <h1>Debit Card Form</h1>
+    <form onsubmit="return validateForm()">
+      <div class="form-group">
+        <label for="card-number">Card Number:</label>
+        <input type="text" id="card-number" maxlength="19"  required   oninput="formatCardNumber(event)">
+    </div>
+      <div class="form-group">
+        <label for="expiration-month">Expiration Date:</label>
+        <input type="text" id="expiration-month" maxlength="2" pattern="\d*" required placeholder="MM"   oninput="this.value = this.value.replace(/[^0-9]/g, '')" >
+        <input type="text" id="expiration-year" maxlength="2" pattern="\d*" required placeholder="YY"  oninput="this.value = this.value.replace(/[^0-9]/g, '')" >
+      </div>
+      <div class="form-group">
+        <label for="cvv">CVV:</label>
+        <input type="password" id="cvv" maxlength="3" pattern="\d*" required  oninput="this.value = this.value.replace(/[^0-9]/g, '')" >
+      </div>
+      <div class="form-group">
+        <label for="cardholder-name">Cardholder Name:</label>
+        <input type="text" id="cardholder-name" required>
+      </div>
+      <div id="error-container"></div>
+      <button type="submit" id="sub">Submit</button>
+    </form>
+  </div>
+</body>
+</html>
