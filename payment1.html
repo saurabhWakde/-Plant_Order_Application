@@ -41,13 +41,24 @@
                 <div id="form">
                    <div id="cred">
                    <div id="input">
-                     <select name="" id=""></select>
 
+                     <select name="payment-method" id="payment-method">
+                        <option value="" selected disabled hidden>Credi or debitcard</option>
+                        <option value="debitcard">Debit Card</option>
+                        <option value="creditcard">Credit Card</option>
+                      </select>
 
-                       <button id="Prev2">GO Back</button>
-                        <button id="Next2">Continue</button>
+                      <div id="carddetails">
+                        <input type="number" placeholder="Cardnumber"  >
+                        <input type="month" placeholder="MM">
+                        <input type="date"placeholder="yy">
+                        <input type="number" placeholder="CVV">
+                      </div>
+                      
                     
                    </div>
+                   <button id="Prev2">GO Back</button>
+                   <button id="Next2">Continue</button>
                    </div>
                 </div>
 

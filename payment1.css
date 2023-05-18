@@ -91,28 +91,65 @@ body
     margin: 0;
     
 }
-
-
-#cart>#checkout>#form>#cred>#input>input
+#cart>#checkout>#form>#cred>#input>#carddetails
 {
-
-display: flex;
-justify-content: space-between;
-position: relative;
-
+    display: flex;
+    width: 93%;
+    gap: 18px;
 }
-#cart>#checkout>#form> #cred>#input>#Next2
+
+#cart>#checkout>#form>#cred>#input>#carddetails>input
+{
+appearance: none;
+padding: 10px;
+font-size: 1rem;
+
+margin-bottom: 15px;;
+border-radius: 8px;
+border: solid 1px rgb(53,94,0);;
+width: 93%;
+appearance: none;
+outline: none;
+cursor: pointer;
+}
+#cart>#checkout>#form>#cred>#input>#carddetails>input:nth-child(1)
+{
+    width: 280px;
+    appearance: none;
+}
+#cart>#checkout>#form>#cred>#input>#carddetails>input:nth-child(2)
+{
+    width: 62px;
+    appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+#cart>#checkout>#form>#cred>#input>#carddetails>input:nth-child(3)
+{
+    width: 62px;
+    appearance: none;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+}
+#cart>#checkout>#form>#cred>#input>#carddetails>input:nth-child(4)
+{
+    width: 62px
+    
+}
+#Next2
 {
 background-color:rgb(53,94,0); ;
 color: #FFFEF8;
 border: none;
 border-radius: 5px;
 padding: 12px;
-width:46%;
+width:44%;
 
 /* margin-right: 12%; */
 }
-#cart>#checkout>#form> #cred>#input>#Prev2
+#Prev2
 {
     background:none;
     color:rgb(53,94,0);
@@ -120,7 +157,8 @@ width:46%;
     border:solid 1px rgb(53,94,0);
     border-radius: 5px;
 padding: 12px;
-width:46%;
+width:44%;
+margin-right: 26px;
 
 /* margin-right: 12%; */
 }
@@ -138,7 +176,7 @@ margin-right: 10px;
 margin-bottom: 15px;;
 border-radius: 8px;
 border: solid 1px rgb(53,94,0);;
-width: 46%;
+width: 93%;
 appearance: none;
 outline: none;
 cursor: pointer;
