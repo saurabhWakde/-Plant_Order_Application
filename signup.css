@@ -19,7 +19,7 @@ body {
     text-align: center;
   }
   
-  #form button {
+  #signin-btn {
     padding: 10px;
     margin-top: 10px;
     width: 100%;
@@ -27,6 +27,7 @@ body {
     background-color: rgb(53, 94, 0);
     border: none;
     border-radius: 4px;
+    cursor: pointer;
   }
   
   .input-control {
@@ -57,7 +58,7 @@ body {
   
   .input-control .error {
     color: #ff3860;
-    font-size: 9px;
+    font-size: 11px;
     height: 13px;
   }
   
@@ -69,4 +70,36 @@ body {
     text-decoration: none;
     color: rgb(53, 94, 0);
   }
-  
+  #exist-account + h4{
+    text-align:center;
+    margin-top: 40px;
+  }
+  #signin-btn + h4{
+    color: #148dd3;
+    text-align: right;
+  }
+  #logo{
+    text-align: center;
+  }
+
+  #logo > img{
+    width: 7%;
+  }
+label{
+  display: none;
+}
+#username, #password, #email, #password2{
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid green;
+  background-color:transparent;
+  margin-bottom: 10px;
+
+}
+
+@media (max-width: 600px) {
+ #form {
+    width: 100%;
+    margin: 10vh auto 0;
+  }
+}
