@@ -135,7 +135,7 @@ let addToFav = (elem,fav_button)=>{
 }
 
 let goToProductDetails = (elem)=>{
-localStorage.setItem("productToDisplay",elem);
+localStorage.setItem("productToDisplay",JSON.stringify(elem));
 window.location.href='productDetails.html'
 }
 
@@ -168,5 +168,4 @@ checkboxes2.forEach(function(checkbox) {
 })
 
 init("plants");
-
-
+// initpricesort()
