@@ -1,13 +1,94 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="productPage.css">
+    <link rel="stylesheet" href="displaydata.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
+</head>
+
 <body>
-    
+    <div id="navbar">
+
+    </div>
+
+
+    <div id="mainpart">
+        <div id="path-heading">
+            <p id="page-path">Main/<span id="current_page">Catalog</span></p>
+            <h1 id="page-heading">
+                Catalog
+            </h1>
+            <!-- underline image -->
+            <img src="" alt="">
+        </div>
+
+        <div id="products-filter">
+            <div id="filter-div">
+                <div id="filterheading">
+                    <p>ResetFilters</p><i class="material-icons">filter_list</i>
+                </div>
+                <form action="">
+
+                    <label class="labelcontainer">Housepants
+                        <input type="checkbox" value="Indoor" onclick="init(this.value)">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="labelcontainer" value="Outdoor" onclick="init(this.value)">Outdoor Plants
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="labelcontainer" value="flowerpot" onclick="init(this.value)">Flower Pot
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="labelcontainer" value="soilandfetilizers" onclick="init(this.value)">Soil and
+                        Fertilers
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </form>
+
+                <div class="slidecontainer">
+                    <p id="sliderheading">
+                        Price
+                    </p>
+                    <input type="range" min="1" max="20" value="5" class="slider" id="pricerage" list="values">
+                </div>
+
+            </div>
+
+
+
+
+            <div id="product-display">
+                <div id="sort-heading">
+                    <div id="filter-select"></div>
+                    <div id="sort-dropdowm"></div>
+                </div>
+                <div id="product-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="popular-products">
+
+    </div>
+    <div id="footer">
+
+    </div>
+
 </body>
-<script></script>
+<script src="productPage.js"></script>
+
 </html>

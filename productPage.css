@@ -1,0 +1,198 @@
+#current_page {
+  text-decoration: underline;
+  text-decoration-color: grey;
+}
+
+#page_heading {
+  color: #486d00;
+}
+
+body {
+  padding-left: 8%;
+  padding-right: 8%;
+  padding-bottom: 5%;
+  padding-top: 3%;
+}
+
+#products-filter {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: row;
+}
+
+#filter-div {
+  border: 1px solid rgb(128, 41, 0);
+  width: 25%;
+  height: auto;
+  padding-left: 10px;
+}
+
+#product-display {
+  /* border: 5px solid rgb(45, 0, 128); */
+  width: 70%;
+}
+
+#filterheading p {
+  text-decoration: underline;
+  color: grey;
+
+}
+
+#filter-div div {
+  /* border: 1px solid rgb(189, 44, 194); */
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.material-icons {
+  color: grey;
+}
+
+.labelcontainer {
+  display: block;
+  position: relative;
+  padding-left: 20px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 15px;
+  color: #334907;
+  font-weight: 600;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.labelcontainer input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 10px;
+  width: 10px;
+  background-color: #eee;
+  border: 1px solid #344116;
+  border-radius: 4px;
+}
+
+/* On mouse-over, add a grey background color */
+.labelcontainer:hover input~.checkmark {
+  background-color: #97a876;
+}
+
+/* When the checkbox is checked, add a blue background */
+.labelcontainer input:checked~.checkmark {
+  background-color: #486d00;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  position: absolute;
+  display: none;
+  content: "";
+
+}
+
+/* Show the checkmark when checked */
+.labelcontainerr input:checked~.checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.labelcontainer .checkmark:after {
+  left: 9px;
+  top: 5px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+}
+
+
+
+input[type="range"]:focus {
+  outline: none;
+}
+
+/***** Chrome, Safari, Opera and Edge Chromium styles *****/
+/* slider track */
+.slider {
+  -webkit-appearance: none;
+}
+
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: #486d00;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  /* Override default look */
+  appearance: none;
+  margin-top: -3px;
+  /* Centers thumb on the track */
+
+  /*custom styles*/
+  background: #ddd401;
+  height: 1rem;
+  width: 1rem;
+}
+
+
+/******** Firefox styles ********/
+/* slider track */
+input[type="range"]::-moz-range-track {
+  background-color: #486d00;
+  border-radius: 0.5rem;
+  height: 0.5rem;
+}
+
+/* slider thumb */
+input[type="range"]::-moz-range-thumb {
+  border: none;
+  /*Removes extra border that FF applies*/
+  border-radius: 0;
+  /*Removes default border-radius that FF applies*/
+
+  /*custom styles*/
+  background: #ddd401;
+  height: 1rem;
+  width: 1rem;
+}
+
+#sliderheading {
+  color: #486d00;
+}
+
+@media all and (min-width: 320px) and (max-width: 767px) {
+  #products-filter {
+    display: flex;
+    flex-direction: column;
+  }
+
+  #product-display {
+    width: 100%;
+  }
+
+  #filter-div {
+
+    width: 50%;
+    height: auto;
+
+  }
+}
