@@ -1,0 +1,72 @@
+body {
+    background-image: url('https://img.freepik.com/free-vector/copy-space-bokeh-spring-lights-background_52683-55649.jpg');
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #form {
+    width: 300px;
+    margin: 15vh 90px 0px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  #form h1 {
+    color: #0f2027;
+    text-align: center;
+  }
+  
+  #form button {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color: rgb(53, 94, 0);
+    border: none;
+    border-radius: 4px;
+  }
+  
+  .input-control {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+  }
+  
+  .input-control input:focus {
+    outline: 0;
+  }
+  
+  .input-control.success input {
+    border-color: #09c372;
+  }
+  
+  .input-control.error input {
+    border-color: #ff3860;
+  }
+  
+  .input-control .error {
+    color: #ff3860;
+    font-size: 9px;
+    height: 13px;
+  }
+  
+  #exist-account {
+    text-align: center;
+  }
+  
+  a {
+    text-decoration: none;
+    color: rgb(53, 94, 0);
+  }
+  
