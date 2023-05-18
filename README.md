@@ -16,7 +16,7 @@ The development of this application is being carried out by the following team m
 
 3. Anjali
    - Task: Product Page
-   - GitHub: [anjali-github](https://github.com/Anjali331997b)
+   - GitHub: [anjali-github](https://github.com/Anjali331997)
 
 4. Chaitanya
    - Task: Payment Successful Page
