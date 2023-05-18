@@ -9,6 +9,7 @@ The development of this application is being carried out by the following team m
 1. Shweta
    - Task: Signup Page
    - GitHub: [shweta-github](https://github.com/Swetarani-Patel)
+   -  UI/UX [Design](https://www.behance.net/gallery/167275279/E-commerce-Green-paradise?tracking_source=search_projects%7Ce+commerce+website)
 
 2. Anmol
    - Task: Home Page
