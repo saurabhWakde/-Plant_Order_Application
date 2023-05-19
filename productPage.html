@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Paradise</title>
+    <link rel="stylesheet" href="productPage.css">
+    <link rel="stylesheet" href="displaydata.css">
+
+    <link rel="icon" href="https://www.green-paradise.id/Support/img/logo.jpg" style="border-radius: 100%;">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+</head>
+
+<body>
+    <div id="navbar">
+
+    </div>
+
+
+    <div id="mainpart">
+        <div id="path-heading">
+            <p id="page-path">
+                <a href="index.html">Main/</a>
+                <a href="productPage.html">Catalog</a></p>
+            <h1 id="page-heading">
+                Catalog
+            </h1>
+            <!-- underline image -->
+            <img src="./productpageimages/underlineshort.jpeg" alt="">
+        </div>
+
+        <div id="products-filter">
+            <div id="filter-div">
+                <div id="filterheading">
+                    <p>Categories</p><i class="material-icons">filter_list</i>
+                </div>
+                <form action="" id="filtercats">
+
+                    <label class="labelcontainer">Houseplants
+                        <input type="checkbox" value="Indoor" onclick="init(`plants?type=${this.value}&_limit=9`)">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="labelcontainer" value="Outdoor" onclick="init(`plants?type=Outdoor&_limit=9`)">Outdoor Plants
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="labelcontainer" value="flowerpot" onclick="init(`plants?type=${this.value}&_limit=9`)">Flower Pot
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="labelcontainer" value="soilandfetilizers" onclick="init(`plants?type=${this.value}&_limit=9`)">Soil and
+                        Fertilers
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </form>
+
+                <!-- <div class="price_filter"> -->
+                    <div id="filterheading">
+                        <p>Prices</p><i class="material-icons">filter_list</i>
+                    </div>
+                    <br>
+
+                    <form action="" id="filterprice">
+                        <label class="labelcontainer">10-150 Rs
+                            <input type="checkbox" value="Indoor" onclick="init(`plants?price_gte=1.00&price_lte=5.00&_limit=9`)">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="labelcontainer" value="Outdoor" onclick="init(`plants?price_gte=5.01&price_lte=8.3&_limit=9`)">151-250 Rs
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="labelcontainer" value="flowerpot" onclick="init(`plants?price_gte=8.4&price_lte=11.67&_limit=9`)">251-350 Rs
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                        <label class="labelcontainer" value="soilandfetilizers" onclick="init(`plants?price_gte=11.68&price_lte=19&_limit=9`)">351-550 Rs
+                            <input type="checkbox">
+                            <span class="checkmark"></span>
+                        </label>
+                    </form>
+                <!-- </div> -->
+
+            </div>
+            <div id="product-display">
+                <div id="sort-heading">
+                    <div id="filter-select"></div>
+                    <div id="sort-dropdowm"></div>
+                </div>
+                <div id="product-container">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div id="popular-products">
+
+    </div>
+    <div id="footer">
+
+    </div>
+
+</body>
+<script src="productPage.js"></script>
+
+</html>
