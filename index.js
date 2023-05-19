@@ -15,6 +15,25 @@ sel2.addEventListener("change",call)
 var search = document.getElementById("search");
 search.addEventListener("click",input);
 
+document.getElementById("cate").addEventListener("click",tocatalog)
+
+document.getElementById("cate2").addEventListener("click",tocatalog)
+
+search.addEventListener("keypress",tocate2);
+
+function tocatalog(){
+    window.location.href = "productPage.html"
+}
+
+
+// function tocate2(e){
+//     if(e.keypress==enter){
+//         window.location.href = "productPage.html"
+//     }
+// }
+
+
+
 function input(){
     var inpu = document.createElement("input");
     inpu.placeholder= "search..."
@@ -26,7 +45,7 @@ function input(){
 function call(){
     if(sel2.value ==="logout"){
         alert("You want to Logout")
-        window.location.href = "#";
+        window.location.href = "signin.html";
     }
     else if(sel2.value ==="order"){
         window.location.href = "#";
@@ -35,6 +54,7 @@ function call(){
         window.location.href = "index.html"
     }
 }
+
 
 
 function lang(){

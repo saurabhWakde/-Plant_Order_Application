@@ -13,11 +13,12 @@
             color: grey;
             width: 85.5%;
             position: fixed;
+            z-index: 10;
             /* border: 2px solid red; */
             /* align-items: center; */
         }
 
-        #box1>img{
+        #box1>a>img{
             width: 150px;
         }
         #box2{
