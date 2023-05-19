@@ -23,7 +23,7 @@ window.onload = () => {
       alert("This item is already in your cart");
     }
 
-    window.location.href = "cart.html";
+    window.location.href = "personalinfo.html";
   };
 
   let addToFav = (elem, fav_button) => {
