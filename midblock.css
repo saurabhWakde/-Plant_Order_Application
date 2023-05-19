@@ -91,6 +91,9 @@ pre{
     width: 100%;
     margin-top: -100px;
 }
+#block4>div{
+    border-radius: 15px;
+}
 #block4>div>div>img{
     width: 100%;
     border-top-left-radius: 15px;
@@ -143,7 +146,6 @@ pre{
     margin-top: -80px;
 }
 #block5>div>img{
-    /* border: 1px solid black; */
     width: 400px;
     margin-left: -30px;
     margin-top: -67px;
@@ -153,7 +155,6 @@ pre{
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
-    /* border: 1px solid black; */
 }
 #block6>div>button{
     width: 150px;
@@ -165,7 +166,6 @@ pre{
     border-radius: 8px;
 }
 #block6>div>img{
-    /* border: 1px solid black; */
     width: 280px;
     margin-left: -60px;
     margin-top: -50px;
@@ -206,7 +206,6 @@ a>div>:nth-child(2){
     margin-top: -0px;
     margin-bottom: 10px;
     font-size: 30px;
-    /* border: 1px solid black; */
 }
 /* css for block 8 */
 #block8{
@@ -230,7 +229,6 @@ a>div>:nth-child(2){
     width: 80%;
 }
 #block8>div>h1+img{
-    /* border: 1px solid black; */
     width: 400px;
     height: 200px;
     margin-top: -80px;
@@ -257,7 +255,6 @@ a>div>:nth-child(2){
     text-align: center;
 }
 #blockx>img{
-    /* border: 1px solid black; */
     width: 450px;
     margin-left:330px;
     margin-top: -55px;
@@ -272,7 +269,6 @@ a>div>:nth-child(2){
         flex-direction: column-reverse;
     }
     #block1>div>pre{
-        /* margin-left: 50px; */
         margin-top: 0px;
     }
     #block1>div>img{
