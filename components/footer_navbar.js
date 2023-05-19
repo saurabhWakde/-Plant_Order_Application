@@ -10,7 +10,7 @@ function navbar(){
     <a href="">
         <p id="sale">Sales</p>
     </a>
-    <a href="">
+    <a href="#block8">
         <p id="delpay">Delivery & Payment</p>
     </a>
     <a href="">
@@ -81,7 +81,7 @@ function footer (){
     <h5>Contacts</h5>
 </div>
 <div>
-    <button>^</button>
+    <button><a href="#xxy">^</a></button>
 </div>
     `
 }

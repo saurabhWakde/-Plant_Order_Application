@@ -111,6 +111,10 @@
         #footer>div>h5{
             margin-top: -10px;
         }
+        div>button>a{
+            text-decoration: none;
+            color: white;
+        }
         ::-webkit-scrollbar {
             display:none;
 
