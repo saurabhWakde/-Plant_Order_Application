@@ -1,16 +1,18 @@
-/* body {
-  background-color: #f7f7f7;
-} */
+html {
+  /* background-color: #f7f7f7; */
+  scroll-behavior:smooth;
+}
 
 #yyy{
   height: 100px;
   width: 100%;
 }
 
-/* #navbar{
-  background-color: #f7f7f7;
-  border: 1px solid red;
-} */
+#navbar{
+  z-index: 10;
+  /* background-color: #f7f7f7;
+  border: 1px solid red; */
+}
 
 #current_page {
   text-decoration: underline;

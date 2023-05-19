@@ -32,3 +32,13 @@
     margin-top: 10%;
     margin-bottom: 5%;
 }
+
+#popular-products-head{
+    color: #486e00;
+    margin-bottom: -10px;
+}
+
+#popular-products-head img{
+    margin-top: -5px;
+    width: 40%;
+}
