@@ -20,10 +20,6 @@ let init = async(param)=>{
     displayData(data);
 }
 
-
-
-
-
 let product_container = document.getElementById("product-container");
 function displayData(data){
     console.log("checking")
@@ -32,7 +28,6 @@ function displayData(data){
     data.map((elem,index)=>{
         let product_cart = document.createElement("div");
         product_cart.setAttribute("class","product_cart");
-       
 
         let card_img = document.createElement("div")
         card_img.setAttribute("class","card_img")
