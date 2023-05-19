@@ -5,12 +5,14 @@ body {
   }
   
   #form {
+    height: 72%;
     width: 300px;
     margin: 15vh 90px 0px auto;
     padding: 20px;
     background-color: whitesmoke;
     border-radius: 4px;
     font-size: 12px;
+    cursor: pointer;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   }
   
@@ -24,12 +26,15 @@ body {
     margin-top: 10px;
     width: 100%;
     color: white;
-    background-color: rgb(53, 94, 0);
+    background-color:rgb(53, 101, 0);
     border: none;
     border-radius: 4px;
     cursor: pointer;
   }
-  
+  #signin-btn:hover{
+    background-color: rgb(53, 80, 0);
+  }
+
   .input-control {
     display: flex;
     flex-direction: column;
@@ -43,6 +48,7 @@ body {
     padding: 10px;
     width: 100%;
   }
+
   
   .input-control input:focus {
     outline: 0;
@@ -50,6 +56,7 @@ body {
   
   .input-control.success input {
     border-color: #09c372;
+    
   }
   
   .input-control.error input {
@@ -65,10 +72,12 @@ body {
   #exist-account {
     text-align: center;
   }
-  
+  .a11:hover{
+    color:rgb(136, 0, 79)
+  }
   a {
     text-decoration: none;
-    color: rgb(53, 94, 0);
+    color: #148dd3;
   }
   #exist-account + h4{
     text-align:center;
@@ -88,14 +97,34 @@ body {
 label{
   display: none;
 }
-#username, #password, #email, #password2{
+#username, #password, #email, #password2, #password{
   border-radius: 0;
   border: none;
   border-bottom: 1px solid green;
-  background-color:transparent;
+  background-color: transparent;
   margin-bottom: 10px;
-
 }
+#username:hover, #password:hover, #email:hover, #password2:hover, #password:hover{
+  background-color: #ebf3eb;
+}
+.termm {
+  display: flex;
+  align-items: center;
+}
+
+.termm label {
+  margin-left: 5px;
+}
+
+label + h4{
+  color: #148dd3;
+  margin-left: 90px;
+}
+
+.termm1{
+  margin-top: 11px;
+}
+
 
 @media (max-width: 600px) {
  #form {
