@@ -1,0 +1,34 @@
+#block4{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 20px;
+    width: 100%;
+    margin-top: -100px;
+}
+#block4>div>div>img{
+    width: 100%;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+}
+#block4>div>div>div>img{
+    width: 50px;
+    border-radius: 100%;
+    padding-top: 20px;
+    padding-right: 10px;
+    cursor: pointer;
+}
+#block4>div>div{
+    display: flex;
+    justify-content: space-between;
+    background-color: #fcfae0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+#xyz{
+    padding-left: 10px;
+}
+
+#popular-products{
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
