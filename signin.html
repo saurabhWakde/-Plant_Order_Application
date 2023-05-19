@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Page</title>
+    
+    <link rel="stylesheet" href="./signup.css">
+    <script defer src="./signin.js"></script>
+</head>
+<body>
+
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Sign In</h1>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" placeholder="Email">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password"name="password" type="password" placeholder="Password">
+                <div class="error"></div>
+            </div>
+            <div class="termm">
+                <input type="checkbox" id="terms" name="terms" style="display: inline;">
+                <label for="terms" style="display: inline;">Remember Me</label>  
+                <h4>Forgot password?</h4>
+            </div>
+            <button type="submit" id="signin-btn">Sign in</button>
+            <div id="success-message" class="success-message"></div>
+            <h4 id="exist-account">Don't have an account yet? <span id="signin-col"><a class="a11" href="signup.html" target="_blank
+                ">Create one.</a></span></h4>
+                <h4>or Sign Up using</h4>
+                <div id="logo">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/53/Google_%22G%22_Logo.svg/588px-Google_%22G%22_Logo.svg.png?20230305195327" alt="Google Icon">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/fa/Apple_logo_black.svg/488px-Apple_logo_black.svg.png?20220821121934" alt="Apple Icon"> 
+                       <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/2021_Facebook_icon.svg/512px-2021_Facebook_icon.svg.png?20220821121039" alt="FaceBook Icon">
+                     </div>
+        </form>
+    </div>
+</body>
+</html>

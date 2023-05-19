@@ -1,0 +1,134 @@
+body {
+    background-image: url('https://img.freepik.com/free-vector/copy-space-bokeh-spring-lights-background_52683-55649.jpg');
+    background-size: cover;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  #form {
+    height: 72%;
+    width: 300px;
+    margin: 15vh 90px 0px auto;
+    padding: 20px;
+    background-color: whitesmoke;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  }
+  
+  #form h1 {
+    color: #0f2027;
+    text-align: center;
+  }
+  
+  #signin-btn {
+    padding: 10px;
+    margin-top: 10px;
+    width: 100%;
+    color: white;
+    background-color:rgb(53, 101, 0);
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  #signin-btn:hover{
+    background-color: rgb(53, 80, 0);
+  }
+
+  .input-control {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .input-control input {
+    border: 2px solid #f0f0f0;
+    border-radius: 4px;
+    display: block;
+    font-size: 12px;
+    padding: 10px;
+    width: 100%;
+  }
+
+  
+  .input-control input:focus {
+    outline: 0;
+  }
+  
+  .input-control.success input {
+    border-color: #09c372;
+    
+  }
+  
+  .input-control.error input {
+    border-color: #ff3860;
+  }
+  
+  .input-control .error {
+    color: #ff3860;
+    font-size: 11px;
+    height: 13px;
+  }
+  
+  #exist-account {
+    text-align: center;
+  }
+  .a11:hover{
+    color:rgb(136, 0, 79)
+  }
+  a {
+    text-decoration: none;
+    color: #148dd3;
+  }
+  #exist-account + h4{
+    text-align:center;
+    margin-top: 40px;
+  }
+  #signin-btn + h4{
+    color: #148dd3;
+    text-align: right;
+  }
+  #logo{
+    text-align: center;
+  }
+
+  #logo > img{
+    width: 7%;
+  }
+label{
+  display: none;
+}
+#username, #password, #email, #password2, #password{
+  border-radius: 0;
+  border: none;
+  border-bottom: 1px solid green;
+  background-color: transparent;
+  margin-bottom: 10px;
+}
+#username:hover, #password:hover, #email:hover, #password2:hover, #password:hover{
+  background-color: #ebf3eb;
+}
+.termm {
+  display: flex;
+  align-items: center;
+}
+
+.termm label {
+  margin-left: 5px;
+}
+
+label + h4{
+  color: #148dd3;
+  margin-left: 90px;
+}
+
+.termm1{
+  margin-top: 11px;
+}
+
+
+@media (max-width: 600px) {
+ #form {
+    width: 100%;
+    margin: 10vh auto 0;
+  }
+}
