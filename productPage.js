@@ -1,4 +1,13 @@
 // https://plant-application-data.onrender.com/plants
+// import {navbar,footer} from "./components/footer_navbar.js"
+
+// var nav = document.getElementById("navbar");
+// nav.innerHTML = navbar();
+
+// var foot = document.getElementById("footer");
+// foot.innerHTML = footer();
+
+
 
 const url = `https://plant-application-data.onrender.com/`;
 let favlistarr = JSON.parse(localStorage.getItem("favlist")) ||[];
@@ -89,9 +98,61 @@ function displayData(data){
         product_container.append(product_cart)
         
      })
+
+    let paginationdiv = document.getElementById("paginationdiv");
+    paginationdiv.innerHTML="";
+
+
+     let btn1 = document.createElement("button");
+     btn1.setAttribute("class","btn1 btnpage")
+     btn1.innerHTML="1";
+     btn1.addEventListener("click",()=>{
+      init(`plants?_page=1&_limit=9`);
+     });
+
+     let btn2 = document.createElement("button");
+     btn2 .setAttribute("class","btn2 btnpage")
+     btn2 .innerHTML="2";
+     btn2.addEventListener("click",()=>{
+      init(`plants?_page=2&_limit=9`);
+     });
+
+     let btn3 = document.createElement("button");
+     btn3.setAttribute("class","btn3 btnpage")
+     btn3.innerHTML="3";
+     btn3.addEventListener("click",()=>{
+      init(`plants?_page=3&_limit=9`);
+     });
+
+     let btn4 = document.createElement("button");
+     btn4.setAttribute("class","btn4 btnpage")
+     btn4.innerHTML="4";
+     btn4.addEventListener("click",()=>{
+      init(`plants?_page=4&_limit=9`);
+     });
+
+     let btn5 = document.createElement("button");
+     btn5.setAttribute("class","btn5 btnpage")
+     btn5.innerHTML="5";
+     btn5.addEventListener("click",()=>{
+      init(`plants?_page=5&_limit=9`);
+     });
+
+     let btn6 = document.createElement("button");
+     btn6.setAttribute("class","btn1 btnpage")
+     btn6.innerHTML="6";
+     btn6.addEventListener("click",()=>{
+      init(`plants?_page=6&_limit=9`);
+     });
+
+     paginationdiv.append(btn1,btn2,btn3,btn4,btn4,btn5,btn6);
+
+     if(data.length != 0){
+      document.getElementById("product-display").appendChild(paginationdiv);
+     }
+     
+
 }
-
-
 
 let addToCart = (elem)=>{
 let item = cart_list.filter((ele)=>{

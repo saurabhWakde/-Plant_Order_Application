@@ -25,7 +25,8 @@
         <div id="path-heading">
             <p id="page-path">
                 <a href="index.html">Main/</a>
-                <a href="productPage.html">Catalog</a></p>
+                <a href="productPage.html">Catalog</a>
+            </p>
             <h1 id="page-heading">
                 Catalog
             </h1>
@@ -44,15 +45,18 @@
                         <input type="checkbox" value="Indoor" onclick="init(`plants?type=${this.value}&_limit=9`)">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="labelcontainer" value="Outdoor" onclick="init(`plants?type=Outdoor&_limit=9`)">Outdoor Plants
+                    <label class="labelcontainer" value="Outdoor" onclick="init(`plants?type=Outdoor&_limit=9`)">Outdoor
+                        Plants
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="labelcontainer" value="flowerpot" onclick="init(`plants?type=${this.value}&_limit=9`)">Flower Pot
+                    <label class="labelcontainer" value="flowerpot"
+                        onclick="init(`plants?type=${this.value}&_limit=9`)">Flower Pot
                         <input type="checkbox">
                         <span class="checkmark"></span>
                     </label>
-                    <label class="labelcontainer" value="soilandfetilizers" onclick="init(`plants?type=${this.value}&_limit=9`)">Soil and
+                    <label class="labelcontainer" value="soilandfetilizers"
+                        onclick="init(`plants?type=${this.value}&_limit=9`)">Soil and
                         Fertilers
                         <input type="checkbox">
                         <span class="checkmark"></span>
@@ -60,29 +64,33 @@
                 </form>
 
                 <!-- <div class="price_filter"> -->
-                    <div id="filterheading">
-                        <p>Prices</p><i class="material-icons">filter_list</i>
-                    </div>
-                    <br>
+                <div id="filterheading">
+                    <p>Prices</p><i class="material-icons">filter_list</i>
+                </div>
+                <br>
 
-                    <form action="" id="filterprice">
-                        <label class="labelcontainer">10-150 Rs
-                            <input type="checkbox" value="Indoor" onclick="init(`plants?price_gte=1.00&price_lte=5.00&_limit=9`)">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="labelcontainer" value="Outdoor" onclick="init(`plants?price_gte=5.01&price_lte=8.3&_limit=9`)">151-250 Rs
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="labelcontainer" value="flowerpot" onclick="init(`plants?price_gte=8.4&price_lte=11.67&_limit=9`)">251-350 Rs
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                        <label class="labelcontainer" value="soilandfetilizers" onclick="init(`plants?price_gte=11.68&price_lte=19&_limit=9`)">351-550 Rs
-                            <input type="checkbox">
-                            <span class="checkmark"></span>
-                        </label>
-                    </form>
+                <form action="" id="filterprice">
+                    <label class="labelcontainer">10-150 Rs
+                        <input type="checkbox" value="Indoor"
+                            onclick="init(`plants?price_gte=1.00&price_lte=5.00&_limit=9`)">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="labelcontainer" value="Outdoor"
+                        onclick="init(`plants?price_gte=5.01&price_lte=8.3&_limit=9`)">151-250 Rs
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="labelcontainer" value="flowerpot"
+                        onclick="init(`plants?price_gte=8.4&price_lte=11.67&_limit=9`)">251-350 Rs
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                    <label class="labelcontainer" value="soilandfetilizers"
+                        onclick="init(`plants?price_gte=11.68&price_lte=19&_limit=9`)">351-550 Rs
+                        <input type="checkbox">
+                        <span class="checkmark"></span>
+                    </label>
+                </form>
                 <!-- </div> -->
 
             </div>
@@ -92,6 +100,10 @@
                     <div id="sort-dropdowm"></div>
                 </div>
                 <div id="product-container">
+
+                </div>
+
+                <div id="paginationdiv" class="paginationdiv">
 
                 </div>
             </div>
@@ -108,6 +120,7 @@
     </div>
 
 </body>
-<script src="productPage.js"></script>
+
 
 </html>
+<script src="productPage.js" ></script>

@@ -1,3 +1,12 @@
+// import {navbar,footer} from "./components/footer_navbar.js"
+
+// var nav = document.getElementById("navbar");
+// nav.innerHTML = navbar();
+
+// var foot = document.getElementById("footer");
+// foot.innerHTML = footer();
+
+
 let cart_list = JSON.parse(localStorage.getItem("cartlist")) || [];
 let favlistarr = JSON.parse(localStorage.getItem("favlist")) || [];
 window.onload = () => {
