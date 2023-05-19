@@ -65,6 +65,9 @@ pre{
     display: flex;
     justify-content: space-between;
 }
+#pp,#cat2{
+    color: green;
+}
 #block3>div>button{
     margin-top: 30px;
     border: none;
@@ -177,11 +180,13 @@ pre{
 }
 #block7>div>img{
     width: 100%;
+    height: 300px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
 #block7>:nth-child(3)>img{
-    height: 350px;
+    width: 100%;
+    height: 300px;
 }
 
 #block7>div>a>div{
@@ -190,8 +195,8 @@ pre{
     padding: 10px;
 }
 #block7>div{
-    background-color: #fcfae0;
     border-radius: 15px;
+    background-color: #fcfae0;
 }
 #block7>div>a{
     color: black;
