@@ -1,0 +1,46 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Page</title>
+    
+    <link rel="stylesheet" href="./signup.css">
+    <script defer src="./signup.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Create An Account</h1>
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text" placeholder="Username">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text" placeholder="Email">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password">Password</label>
+                <input id="password" name="password" type="password" placeholder="Password">
+                <div class="error"></div>
+            </div>
+            <div class="input-control">
+                <label for="password2">Confirm Password</label>
+                <input id="password2" name="password2" type="password" placeholder="Confirm password">
+                <div class="error"></div>
+            </div>
+            <div class="termm1">
+                <input type="checkbox" id="terms" name="terms" style="display: inline;">
+                <label for="terms" style="display: inline;">I accept the <a href="">Terms of Use</a>  and <a href="">Privacy Policy</a></label>
+            </div>
+            <button type="submit" id="signin-btn">Sign up</button>
+            <div id="success-message" class="success-message"></div>
+            <h4 id="exist-account">Already have an account? <span id="signin-col"><a class="a11" href="signin.html" target="bla
+                ">Sign in</a></span></h4>
+        </form>
+    </div>
+</body>
+</html>
