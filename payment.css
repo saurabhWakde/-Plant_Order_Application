@@ -3,6 +3,7 @@ body
 {
    
     background-color: #FFFEF8;
+    
 } 
 #container
 {
@@ -70,7 +71,7 @@ body
 
 #cart> #checkout>#userdata>#Horizontalline>#line
 {
-    color: rgb(53,94,0);
+    color: #A6AC92;
   padding-left:10px;
   transform: scaleX(3)
 }
@@ -149,10 +150,6 @@ option
     
 }
 
-option:nth-child(1):hover
-{
-  
-}
 #cart>#checkout>#checkbox
 {
     width:100%;
@@ -247,9 +244,7 @@ padding-bottom: 35px;
    
   }
   
-  ::-webkit-scrollbar-track {
   
-  }
   
   ::-webkit-scrollbar-corner {
     background: transparent;

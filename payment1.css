@@ -70,7 +70,7 @@ body
 
 #cart> #checkout>#userdata>#Horizontalline>#line
 {
-    color: rgb(53,94,0);
+    color: #A6AC92;
   padding-left:10px;
   transform: scaleX(3)
 }

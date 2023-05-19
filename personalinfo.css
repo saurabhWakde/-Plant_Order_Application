@@ -12,6 +12,8 @@ body
     width: 100%;
    box-sizing: border-box;
    padding-left: 8%; 
+   height: 99vh;
+   overflow: hidden;
 
 }
 
@@ -70,7 +72,8 @@ body
 
 #cart> #checkout>#userdata>#Horizontalline>#line
 {
-    color: rgb(53,94,0);
+    /* color: rgb(53,94,0); */
+    color: #A6AC92;
   padding-left:10px;
   transform: scaleX(3)
 }
@@ -109,7 +112,6 @@ width: 43%;
 #cart>#checkout>#form>#cred>#Selc>select
 {
     padding: 10px;
-
 margin-right: 10px;
 margin-bottom: 15px;;
 border-radius: 8px;
@@ -253,7 +255,7 @@ width:46%;
  
     scroll-snap-type: y mandatory;
     overflow-y: scroll;
-    height: 70%;
+    height: 56%;
     width: 90%;
    
  
@@ -278,8 +280,29 @@ width:46%;
     
     display: flex;
   
-    height: 100px;
-padding-bottom: 35px;
+    height: 120px;
+margin-bottom: 70px;
+  }
+
+  
+#Qnt
+  {
+
+border-radius: 5px;
+border:solid 1px rgb(53,94,0);;
+padding:5px;
+width:40%;
+
+  }
+  #Remove
+  {
+    border: none;
+    padding: 5px;;
+    padding-left: 50px;;
+    border-radius: 5px;
+    background-color:rgb(255, 255, 255);
+    color: rgb(53,94,0);
+    margin-top: 30px;;
   }
   #items>.scroll-item>div>img
   {
@@ -288,8 +311,8 @@ padding-bottom: 35px;
     box-shadow: rgba(149, 157, 165, 0.2) 0px 4px 24px;
     border-radius: 5px;;
     margin-right: 10px;
-    width:26vh;
-    height: 16vh;
+    width:28vh;
+    height: 22vh;
 
   }
   #items>.scroll-item>div>p

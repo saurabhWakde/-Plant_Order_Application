@@ -173,7 +173,11 @@ let input=document.getElementById("cred")
 //    Continue.id="Next"
 //    Goback.textContent="Go Back"
     let selc1=document.createElement("select");
+    
     let defaultOption1=document.createElement("option");
+    defaultOption1.addEventListener("change", function() {
+        this.style.border = "none"; // Remove border when an option is selected
+      });
     defaultOption1.text="Country";
     defaultOption1.disabled = true;
     defaultOption1.selected = true;
