@@ -37,6 +37,7 @@ function navbar(){
         <select id="sel2">
             <option></option>
             <option id="log" value="logout"><a href="signin.html">Logout</a></option>
+            <option id="login" value ="login"><a href="signin.html">Login</a><option>
             <option id="ord" value="order"><a href="#">Orders</a></option>
         </select>
     </div>
