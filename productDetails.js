@@ -1,10 +1,10 @@
-// import {navbar,footer} from "./components/footer_navbar.js"
+import {navbar,footer} from "./components/footer_navbar.js"
 
-// var nav = document.getElementById("navbar");
-// nav.innerHTML = navbar();
+var nav = document.getElementById("navbar");
+nav.innerHTML = navbar();
 
-// var foot = document.getElementById("footer");
-// foot.innerHTML = footer();
+var foot = document.getElementById("footer");
+foot.innerHTML = footer();
 
 
 let cart_list = JSON.parse(localStorage.getItem("cartlist")) || [];
@@ -85,7 +85,7 @@ window.onload = () => {
 
   let name_underline = document.createElement("img");
   name_underline.setAttribute("class", "name_underline");
-  name_underline.src = "./productpageimages/underlineshort.jpeg";
+  name_underline.src = "./productpageimages/underlineshort.png";
 
   let stock_status = document.createElement("p");
   stock_status.setAttribute("class", "stock_status");

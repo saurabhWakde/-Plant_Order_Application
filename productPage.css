@@ -1,9 +1,16 @@
-body {
+/* body {
   background-color: #f7f7f7;
-  border: solid #BDC5A9 10px;
-  ;
-  border-radius: 10px;
+} */
+
+#yyy{
+  height: 100px;
+  width: 100%;
 }
+
+/* #navbar{
+  background-color: #f7f7f7;
+  border: 1px solid red;
+} */
 
 #current_page {
   text-decoration: underline;
@@ -23,14 +30,6 @@ body {
 }
 
 
-
-body {
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-bottom: 5%;
-  padding-top: 3%;
-}
-
 #products-filter {
   /* border: 1px solid green; */
   display: flex;
@@ -47,6 +46,10 @@ body {
 #product-display {
   /* border: 5px solid rgb(45, 0, 128); */
   width: 75%;
+}
+
+#mainpart{
+  margin-bottom: 50px;
 }
 
 #filterheading p {
