@@ -42,3 +42,31 @@
     margin-top: -5px;
     width: 40%;
 }
+
+@media all and (min-width: 768px) and (max-width: 1024px) {
+    #popular-products-head{
+        visibility: hidden;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    #popular-products{
+        visibility: hidden;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    
+  }
+  
+  /* small screens */
+  @media all and (min-width: 320px) and (max-width: 767px) {
+    #popular-products-head{
+        visibility: hidden;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+    #popular-products{
+        visibility: hidden;
+        margin-top: 0%;
+        margin-bottom: 0%;
+    }
+  }

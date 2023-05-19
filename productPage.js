@@ -258,3 +258,7 @@ checkboxes2.forEach(function (checkbox) {
 
 init("plants");
 // initpricesort()
+
+
+
+

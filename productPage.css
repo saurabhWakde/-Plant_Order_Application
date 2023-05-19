@@ -262,6 +262,9 @@ input[type="range"]::-moz-range-thumb {
     display: flex;
     flex-direction: column;
   }
+  #mainpart{
+    margin-bottom: 0px;
+  }
 
   #product-display {
     width: 100%;
@@ -272,5 +275,8 @@ input[type="range"]::-moz-range-thumb {
     width: 100%;
     height: auto;
 
+  }
+  #mainpart{
+    margin-bottom: 0px;
   }
 }
