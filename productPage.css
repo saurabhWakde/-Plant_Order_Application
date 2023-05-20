@@ -1,32 +1,39 @@
+html {
+  /* background-color: #f7f7f7; */
+  scroll-behavior:smooth;
+}
 body{
-  background-color: #f7f7f7;
-  border:solid #BDC5A9 10px;;
-    border-radius: 10px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#yyy{
+  height: 100px;
+  width: 100%;
+}
+
+#navbar{
+  z-index: 10;
+  /* background-color: #f7f7f7;
+  border: 1px solid red; */
 }
 
 #current_page {
   text-decoration: underline;
   text-decoration-color: grey;
 }
-#page-heading{
+
+#page-heading {
   color: #486d00;
   width: 30%;
   margin-bottom: 0px;
   font-size: 45px;
 }
-#path-heading img{
+
+#path-heading img {
   margin-top: 0px;
   width: 20%;
 }
 
-
-
-body {
-  padding-left: 8%;
-  padding-right: 8%;
-  padding-bottom: 5%;
-  padding-top: 3%;
-}
 
 #products-filter {
   /* border: 1px solid green; */
@@ -44,6 +51,10 @@ body {
 #product-display {
   /* border: 5px solid rgb(45, 0, 128); */
   width: 75%;
+}
+
+#mainpart{
+  margin-bottom: 50px;
 }
 
 #filterheading p {
@@ -67,22 +78,26 @@ body {
   color: grey;
 
 }
-#page-path{
+
+#page-path {
   color: #486d00;
 }
 
 a:link {
-  color: #486d00;;
+  color: #486d00;
+  ;
 }
 
 /* visited link */
 a:visited {
-  color: #486d00;;
+  color: #486d00;
+  ;
 }
 
 /* mouse over link */
 a:hover {
-  color: #486d00;;
+  color: #486d00;
+  ;
 }
 
 /* selected link */
@@ -220,10 +235,38 @@ input[type="range"]::-moz-range-thumb {
   color: #486d00;
 }
 
+/* #product-container{
+  border: 1px solid rgb(11, 14, 59);
+} */
+
+.paginationdiv {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 10px;
+  /* border: 1px solid rgb(189, 44, 194); */
+}
+
+.btnpage {
+  width: 30px;
+  height: 30px;
+  background-color: #486d00;
+  color: aliceblue;
+  margin-right: 10px;
+  border: 0px;
+  cursor: pointer;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  border-radius: 3px;
+}
+
 @media all and (min-width: 320px) and (max-width: 767px) {
   #products-filter {
     display: flex;
     flex-direction: column;
+  }
+  #mainpart{
+    margin-bottom: 0px;
   }
 
   #product-display {
@@ -235,5 +278,8 @@ input[type="range"]::-moz-range-thumb {
     width: 100%;
     height: auto;
 
+  }
+  #mainpart{
+    margin-bottom: 0px;
   }
 }

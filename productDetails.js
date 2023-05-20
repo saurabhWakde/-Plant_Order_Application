@@ -1,3 +1,12 @@
+import {navbar,footer} from "./components/footer_navbar.js"
+
+var nav = document.getElementById("navbar");
+nav.innerHTML = navbar();
+
+var foot = document.getElementById("footer");
+foot.innerHTML = footer();
+
+
 let cart_list = JSON.parse(localStorage.getItem("cartlist")) || [];
 let favlistarr = JSON.parse(localStorage.getItem("favlist")) || [];
 window.onload = () => {
@@ -14,7 +23,7 @@ window.onload = () => {
       alert("This item is already in your cart");
     }
 
-    window.location.href = "cart.html";
+    window.location.href = "personalinfo.html";
   };
 
   let addToFav = (elem, fav_button) => {
@@ -76,7 +85,7 @@ window.onload = () => {
 
   let name_underline = document.createElement("img");
   name_underline.setAttribute("class", "name_underline");
-  name_underline.src = "./productpageimages/underlineshort.jpeg";
+  name_underline.src = "./productpageimages/underlineshort.png";
 
   let stock_status = document.createElement("p");
   stock_status.setAttribute("class", "stock_status");
