@@ -19,18 +19,9 @@ document.getElementById("cate").addEventListener("click",tocatalog)
 
 document.getElementById("cate2").addEventListener("click",tocatalog)
 
-//search.addEventListener("keypress",tocate2);
-
 function tocatalog(){
     window.location.href = "productPage.html"
 }
-
-
-// function tocate2(e){
-//     if(e.keypress==enter){
-//         window.location.href = "productPage.html"
-//     }
-// }
 
 
 
@@ -193,59 +184,69 @@ right at home.
     }
 }
 
+// //pagination 
 
-// //pagination
-// const baseServerURL = `https://plant-application-data.onrender.com/plants`
-// let arr=[];
-// var page;
-// fetch(baseServerURL);
-// const get =async()=>
-// {
+// const baseServerURL = `https://plant-application-data.onrender.com/plants`;
+// let currentPage = 1;
+// const itemsPerPage = 3;
 
-//  try
-//  {
-//   let res=await fetch(baseServerURL+`/posts?_page=2&_limit=`)
-//   let data =await res.json();
-//   console.log(data)
-//   dispalydata(data);
-//   console.log(page)
-//   arr.push(data);
-//   return data ;
+// const fetchPlants = async (page) => {
+//   try {
+//     // const res = await fetch(`${baseServerURL}/posts?_page=${page}&_limit=${itemsPerPage}`);
+//     const res = await fetch(`https://plant-application-data.onrender.com/plants?page=${page}&_limit=${itemsPerPage}`);
+//     const data = await res.json();
+//     return data;
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
 
-//  }catch(err)
-//  {
-//   console.log(err)
-//  }
+// const getPlants = async (page) => {
+//   try {
+//     const data = await fetchPlants(page);
+//     console.log(data);
+//     displayData(data);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
 
-// }
-// get();
+// const displayData = (data) => {
+//   const block4 = document.getElementById("block4");
+//   block4.innerHTML = "";
+//   data.map((ele) => {
+//     const mdiv = document.createElement("div");
+//     const idiv = document.createElement("div");
+//     const cdiv = document.createElement("div");
+//     const img = document.createElement("img");
+//     img.src = ele.image_url;
+//     const c1 = document.createElement("div");
+//     c1.setAttribute("id", "xyz");
+//     const c2 = document.createElement("div");
+//     const p1 = document.createElement("p");
+//     p1.textContent = ele.name;
+//     const p2 = document.createElement("p");
+//     p2.textContent = `₹ `+ Math.round(ele.price*30);
+//     const img2 = document.createElement("img");
+//     img2.src = "https://www.pngitem.com/pimgs/m/45-459393_cart-shopping-cart-icon-png-white-transparent-png.png";
+//     var a = document.createElement("a");
+//     a.href = "productPage.html";
+//     a.append(img2)
+//     idiv.append(img);
+//     c1.append(p1, p2);
+//     c2.append(a);
+//     cdiv.append(c1, c2);
+//     mdiv.append(idiv, cdiv);
+//     block4.append(mdiv);
+//   });
+// };
 
-// let dispalydata=(data)=>
-// {
-//   var bck4 = document.getElementById("block4");
-//   bck4.innerHTML = "";
-//  data.forEach((ele)=>
-//  {
-//   var mdiv = document.createElement("div");
-//   var idiv = document.createElement("div");
-//   var cdiv = document.createElement("div");
-//   var img = document.createElement("img");
-//   img.src = ele.image_url;
-//   var c1 = document.createElement("div");
-//   c1.setAttribute("id","xyz");
-//   var c2 = document.createElement("div");
-//   var p1 = document.createElement("p");
-//   p1.textContent = ele.name;
-//   var p2 = document.createElement("p");
-//   p2.textContent = ele.price;
-//   var img2 = document.createElement("img");
-//   img2.src = "https://www.pngitem.com/pimgs/m/45-459393_cart-shopping-cart-icon-png-white-transparent-png.png";
+// // Initial fetch and display of data
+// getPlants(currentPage);
 
-//   idiv.append(img);
-//   c1.append(p1,p2);
-//   c2.append(img2);
-//   cdiv.append(c1,c2);
-//   bck4.append(idiv,cdiv);
-//  })
+// // Pagination event handler
+// document.getElementById("nextButton").addEventListener("click", () => {
+//   currentPage++;
+//   getPlants(currentPage);
+// });
 
-// }

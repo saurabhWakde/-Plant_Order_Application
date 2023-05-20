@@ -4,7 +4,11 @@
             margin-right: 100px;
             margin-top: 0px;
             font-family: "Gill Sans", sans-serif;
+            font-family: 'Poppins', sans-serif;
         }
+        html {
+            scroll-behavior:smooth;
+          }
         #navbar{
             display: flex;
             justify-content: space-between;
