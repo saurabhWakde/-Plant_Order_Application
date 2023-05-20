@@ -29,6 +29,7 @@ form.addEventListener('submit', e => {
   });
   if (found) {
     alert('Sign in Successful');
+    window.location.href = "index.html";
     email.value = '';
     password.value = '';
   } else {
