@@ -1,6 +1,10 @@
 #mid_block{
     margin-top: 30px;
+    font-family: 'Poppins', sans-serif;
 }
+html {
+    scroll-behavior:smooth;
+  }
 /*css for block1*/
 #block1{
     display: flex;
@@ -10,7 +14,7 @@
 pre{
     font-size: 30px;
     font-weight: 900;
-    color: green;
+    color: rgb(53,94,0);
     margin-top: 0px;
 }
 #block1>div>img{
@@ -30,7 +34,7 @@ pre{
 #block1>div>div>button{
     width: 150px;
     height: 30px;
-    background-color: green;
+    background-color: rgb(53,94,0);
     color: white;
     border: none;
     border-radius: 8px;
@@ -45,7 +49,7 @@ pre{
     width: 550px;
 }
 #block2>div>h1{
-    color: green;
+    color: rgb(53,94,0);
     margin-left: 100px;
     margin-top: 100px;
 }
@@ -66,12 +70,12 @@ pre{
     justify-content: space-between;
 }
 #pp,#cat2{
-    color: green;
+    color: rgb(53,94,0);
 }
 #block3>div>button{
     margin-top: 30px;
     border: none;
-    background-color: green;
+    background-color: rgb(53,94,0);
     color: white;
     font-size: 25px;
     border-radius: 50%;
@@ -91,12 +95,15 @@ pre{
     width: 100%;
     margin-top: -100px;
 }
+#block4>div{
+    border-radius: 15px;
+}
 #block4>div>div>img{
     width: 100%;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
 }
-#block4>div>div>div>img{
+#block4>div>div>div>a>img{
     width: 50px;
     border-radius: 100%;
     padding-top: 20px;
@@ -114,6 +121,12 @@ pre{
     padding-left: 10px;
 }
 /*css for block5*/
+#block5>div>p{
+    width: 70%;
+    text-align: center;
+    color: rgb(59, 58, 58);
+    margin: auto;
+}
 #block5{
     display: flex;
     justify-content: space-between;
@@ -134,7 +147,7 @@ pre{
     margin-left: 20px;
 }
 #block5>:nth-child(2)>h1{
-    color: green;
+    color: rgb(53,94,0);
     width: 50%;
 }
 #block5>:nth-child(2)>p{
@@ -143,7 +156,6 @@ pre{
     margin-top: -80px;
 }
 #block5>div>img{
-    /* border: 1px solid black; */
     width: 400px;
     margin-left: -30px;
     margin-top: -67px;
@@ -153,19 +165,17 @@ pre{
     display: flex;
     justify-content: space-between;
     padding-right: 10px;
-    /* border: 1px solid black; */
 }
 #block6>div>button{
     width: 150px;
     height: 30px;
     margin-top: 20px;
     border: none;
-    background-color: green;
+    background-color: rgb(53,94,0);
     color: white;
     border-radius: 8px;
 }
 #block6>div>img{
-    /* border: 1px solid black; */
     width: 280px;
     margin-left: -60px;
     margin-top: -50px;
@@ -206,7 +216,6 @@ a>div>:nth-child(2){
     margin-top: -0px;
     margin-bottom: 10px;
     font-size: 30px;
-    /* border: 1px solid black; */
 }
 /* css for block 8 */
 #block8{
@@ -221,7 +230,7 @@ a>div>:nth-child(2){
 }
 #block8>div>h1{
     margin-top: 50px;
-    color: green;
+    color: rgb(53,94,0);
     margin-left: 80px;
 }
 #block8>div>p{
@@ -230,7 +239,6 @@ a>div>:nth-child(2){
     width: 80%;
 }
 #block8>div>h1+img{
-    /* border: 1px solid black; */
     width: 400px;
     height: 200px;
     margin-top: -80px;
@@ -253,11 +261,10 @@ a>div>:nth-child(2){
     margin-bottom: 40px;
 }
 #blockx>h1{
-    color: green;
+    color: rgb(53,94,0);
     text-align: center;
 }
 #blockx>img{
-    /* border: 1px solid black; */
     width: 450px;
     margin-left:330px;
     margin-top: -55px;
@@ -272,7 +279,6 @@ a>div>:nth-child(2){
         flex-direction: column-reverse;
     }
     #block1>div>pre{
-        /* margin-left: 50px; */
         margin-top: 0px;
     }
     #block1>div>img{

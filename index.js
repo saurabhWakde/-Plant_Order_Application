@@ -15,6 +15,16 @@ sel2.addEventListener("change",call)
 var search = document.getElementById("search");
 search.addEventListener("click",input);
 
+document.getElementById("cate").addEventListener("click",tocatalog)
+
+document.getElementById("cate2").addEventListener("click",tocatalog)
+
+function tocatalog(){
+    window.location.href = "productPage.html"
+}
+
+
+
 function input(){
     var inpu = document.createElement("input");
     inpu.placeholder= "search..."
@@ -26,7 +36,10 @@ function input(){
 function call(){
     if(sel2.value ==="logout"){
         alert("You want to Logout")
-        window.location.href = "#";
+        window.location.href = "signin.html";
+    }
+    else if(sel2.value==="login"){
+        window.location.href = "signin.html";
     }
     else if(sel2.value ==="order"){
         window.location.href = "#";
@@ -35,6 +48,7 @@ function call(){
         window.location.href = "index.html"
     }
 }
+
 
 
 function lang(){
@@ -169,3 +183,70 @@ right at home.
         
     }
 }
+
+// //pagination 
+
+// const baseServerURL = `https://plant-application-data.onrender.com/plants`;
+// let currentPage = 1;
+// const itemsPerPage = 3;
+
+// const fetchPlants = async (page) => {
+//   try {
+//     // const res = await fetch(`${baseServerURL}/posts?_page=${page}&_limit=${itemsPerPage}`);
+//     const res = await fetch(`https://plant-application-data.onrender.com/plants?page=${page}&_limit=${itemsPerPage}`);
+//     const data = await res.json();
+//     return data;
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
+
+// const getPlants = async (page) => {
+//   try {
+//     const data = await fetchPlants(page);
+//     console.log(data);
+//     displayData(data);
+//   } catch (err) {
+//     console.log(err);
+//   }
+// };
+
+// const displayData = (data) => {
+//   const block4 = document.getElementById("block4");
+//   block4.innerHTML = "";
+//   data.map((ele) => {
+//     const mdiv = document.createElement("div");
+//     const idiv = document.createElement("div");
+//     const cdiv = document.createElement("div");
+//     const img = document.createElement("img");
+//     img.src = ele.image_url;
+//     const c1 = document.createElement("div");
+//     c1.setAttribute("id", "xyz");
+//     const c2 = document.createElement("div");
+//     const p1 = document.createElement("p");
+//     p1.textContent = ele.name;
+//     const p2 = document.createElement("p");
+//     p2.textContent = `₹ `+ Math.round(ele.price*30);
+//     const img2 = document.createElement("img");
+//     img2.src = "https://www.pngitem.com/pimgs/m/45-459393_cart-shopping-cart-icon-png-white-transparent-png.png";
+//     var a = document.createElement("a");
+//     a.href = "productPage.html";
+//     a.append(img2)
+//     idiv.append(img);
+//     c1.append(p1, p2);
+//     c2.append(a);
+//     cdiv.append(c1, c2);
+//     mdiv.append(idiv, cdiv);
+//     block4.append(mdiv);
+//   });
+// };
+
+// // Initial fetch and display of data
+// getPlants(currentPage);
+
+// // Pagination event handler
+// document.getElementById("nextButton").addEventListener("click", () => {
+//   currentPage++;
+//   getPlants(currentPage);
+// });
+
