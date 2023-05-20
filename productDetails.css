@@ -1,6 +1,9 @@
 /* body {
   background-color: #f7f7f7;
 } */
+body{
+  font-family: 'Poppins', sans-serif;
+}
 
 
 .product_image_div {

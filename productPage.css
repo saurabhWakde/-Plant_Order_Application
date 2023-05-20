@@ -2,6 +2,9 @@ html {
   /* background-color: #f7f7f7; */
   scroll-behavior:smooth;
 }
+body{
+  font-family: 'Poppins', sans-serif;
+}
 
 #yyy{
   height: 100px;
