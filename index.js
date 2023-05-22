@@ -184,7 +184,10 @@ right at home.
     }
 }
 
-// //pagination 
+// //pagination          
+
+
+
 
 // const baseServerURL = `https://plant-application-data.onrender.com/plants`;
 // let currentPage = 1;

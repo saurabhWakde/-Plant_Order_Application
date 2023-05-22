@@ -1,8 +1,10 @@
-body {
+/* body {
   background-color: #f7f7f7;
-  border: solid #BDC5A9 10px;
-  border-radius: 10px;
+} */
+body{
+  font-family: 'Poppins', sans-serif;
 }
+
 
 .product_image_div {
   /* border: 1px solid chocolate; */
