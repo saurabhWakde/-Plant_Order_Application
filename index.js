@@ -253,3 +253,4 @@ right at home.
 //   getPlants(currentPage);
 // });
 
+

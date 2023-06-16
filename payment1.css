@@ -16,7 +16,7 @@ body
 
 }
 
-#container > img
+#container >a> img
 {
     margin-left:0;
     width:200px;
