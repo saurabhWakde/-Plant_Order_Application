@@ -12,11 +12,11 @@ The development of this application is being carried out by the following team m
 ## Deployed Link:https://saurabhwakde.github.io/-Plant_Order_Application/
 
 1. Shweta
-   - Task: Signup Page
+  
    - GitHub: [shweta-github](https://github.com/Swetarani-Patel)
 
 2. Anmol
-   - Task: Home Page
+  
    - GitHub: [anmol-github](https://github.com/Anmol179)
 
 3. Anjali
@@ -24,11 +24,11 @@ The development of this application is being carried out by the following team m
    - GitHub: [anjali-github](https://github.com/Anjali331997)
 
 4. Chaitanya
-   - Task: Payment Successful Page
+  
    - GitHub: [chaitanya-github](https://github.com/chaitanyakhairnar1)
 
 5. Saurabh
-   - Task: Cart Page
+  
    - GitHub: [saurabh-github](https://github.com/saurabhWakde)
 
 ## WEB Development
